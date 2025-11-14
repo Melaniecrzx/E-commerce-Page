@@ -42,7 +42,7 @@ export default function Header({ cartItems, setCartItems }) {
                     <div>
                         <img alt="cart icon" src={cartBtn} className="h-5 cursor-pointer" onClick={() => setCartOpen(prev => !prev)} />
                         <Cart cartItems={cartItems} setCartItems={setCartItems} className={`absolute z-50 w-[360px] top-14 md:top-[51px] -left-[275px] md:-left-[170px] lg:-left-[190px] transition-opacity duration-300 ease-in-out
-            ${cartOpen ? "opacity-0" : " opacity-100"}`} />
+            ${cartOpen ? "opacity-100" : " opacity-0"}`} />
                     </div>
                     <img alt="avatar icon" src={avatar} className="h-6 md:h-[50px] hover:border-2 rounded-full hover:border-orange-500 cursor-pointer" />
                 </div>

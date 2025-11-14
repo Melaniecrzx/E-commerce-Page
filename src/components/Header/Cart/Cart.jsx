@@ -3,9 +3,6 @@ import deleteIcon from "../../../assets/images/icon-delete.svg";
 
 export default function Cart({ className, cartItems, setCartItems }) {
 
-    const totalItems = cartItems.reduce((sum, item) => sum + item.quantity, 0);
-    const totalAmount = cartItems.reduce((sum, item) => sum + (item.price * item.quantity), 0);
-
     return (
         <div
             className={`${className} font-kumbh flex flex-col px-3 py-6 rounded-3xl bg-white backdrop-blur-lg shadow-xl border border-white/30`}
